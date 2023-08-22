@@ -1,0 +1,16 @@
+{% extends 'base/main.html' %}
+
+{% load static %}
+{% block content %}
+
+
+
+<div class="content">
+      <div class="resume-content">
+        <iframe src="{% static 'pdfs/cv.pdf' %}" class="pdf-iframe"></iframe>
+        <a href="{% static 'pdfs/cv.pdf' %}" class="download-button">Download CV</a>
+      </div>
+</div>
+
+
+{% endblock %}

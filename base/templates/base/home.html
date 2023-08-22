@@ -1,0 +1,80 @@
+{% load static %}
+{% include 'base/navbar.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="{% static '/css/main.css' %}" rel="stylesheet" type="text/css">
+
+  <title>Your Portfolio</title>
+</head>
+<body>
+  <div class="container">
+    <div class="left-column">
+      <div class="profile">
+        <img src="{% static 'images/olly14.jpeg' %}" alt="Profile Picture" class="profile-picture">
+        <h1 class="name">Olly White</h1>
+        <div class="social-icons">
+          <a href="https://twitter.com/ollywhite145"><img src="{% static 'images/twitter.png' %}" alt="Twitter" class="icon"></a>
+          <a href="https://www.instagram.com/ollywhite145/"><img src="{% static 'images/instagram.png' %}" alt="Instagram" class="icon"></a>
+          <a href="https://www.facebook.com/ollywhite145/"><img src="{% static 'images/facebook.png' %}" alt="Facebook" class="icon"></a>
+          <a href="https://github.com/ollywhite145"><img src="{% static 'images/github.png' %}" alt="GitHub" class="icon"></a>
+          <a href="https://www.linkedin.com/in/ollywhite145/"><img src="{% static 'images/linkedin.png' %}" alt="LinkedIn" class="icon"></a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="right-column">
+      <div class="main-container">
+
+        <div class="content">
+          <div class="home-grid">
+            <!-- Repeat this block 12 times for each photo -->
+            <div class="photo">
+              <img src="{% static 'images/olly9.jpg' %}" alt="Photo 1">
+            </div>
+            <div class="photo">
+              <img src="{% static 'images/olly2.jpg' %}" alt="Photo 1">
+            </div>
+            <div class="photo">
+              <img src="{% static 'images/olly3.JPG' %}" alt="Photo 1">
+            </div>
+            <div class="photo">
+              <img src="{% static 'images/olly4.jpg' %}" alt="Photo 1">
+            </div>
+            <div class="photo">
+              <img src="{% static 'images/olly5.jpg' %}" alt="Photo 1">
+            </div>
+            <div class="photo">
+              <img src="{% static 'images/olly6.jpg' %}" alt="Photo 1">
+            </div>
+            <div class="photo">
+              <img src="{% static 'images/olly7.jpg' %}" alt="Photo 1">
+            </div>
+            <div class="photo">
+              <img src="{% static 'images/olly8.jpg' %}" alt="Photo 1">
+            </div>
+            <div class="photo">
+              <img src="{% static 'images/olly13.jpeg' %}" alt="Photo 1">
+            </div>
+            <div class="photo">
+              <img src="{% static 'images/olly10.jpeg' %}" alt="Photo 1">
+            </div>
+            <div class="photo">
+              <img src="{% static 'images/olly11.jpg' %}" alt="Photo 1">
+            </div>
+            <div class="photo">
+              <img src="{% static 'images/olly12.jpg' %}" alt="Photo 1">
+            </div>
+            <!-- Repeat this block 12 times for each photo -->
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--  <script src="script.js"></script> -->
+</body>
+</html>

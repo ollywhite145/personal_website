@@ -1,0 +1,40 @@
+{% extends 'base/main.html' %}
+
+{% load static %}
+{% block content %}
+
+
+<div class="content about-content">
+  <div class="about-section">
+    <div class="left-column">
+      <img src="{% static 'images/olly14.jpeg' %}" alt="Olly's Profile" class="about-picture">
+    </div>
+      <div class="right-column">
+          
+          <div class="contact-form-container">
+          <h2>Contact Me</h2>
+          <form class="contact-form" action="submit_form.php" method="post">
+            <div class="form-row">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-row">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-row">
+              <label for="phone">Phone:</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-row">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      
+      </div>
+  </div>
+</div>
+{% endblock %}

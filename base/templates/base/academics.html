@@ -1,0 +1,95 @@
+{% extends 'base/main.html' %}
+
+{% load static %}
+{% block content %}
+
+
+
+
+<div class="content">
+    <div class="top-container">
+      <div class="academics-text">
+        <p>From 2016-2018 I studied 12 subjects for my GCSE's at Ysgol Friars, Bangor. Following this I was offered a sports/academic scholarhsip at Llandovery College where I studied Mathematics, Physics and Chemistry at A-level (Further Mathematics at AS). I then decided to read Mathematics and Physics at Exeter University where I had been offered a sports scholarhsip. Having enjoyed my undergraduate degree, I decided to stay for another year to study a Masters in Advanced Mathematics. Please find my acadmeic results below, including both my undergradaute and postgraduate dissertations.</p>
+      </div>
+    </div>
+        <div class="degree">
+          <div class="left-column-academics">
+            <iframe src="{% static 'pdfs/dissertation.pdf' %}" class="pdf-iframe-academics"></iframe>
+            <a href="{% static 'pdfs/dissertation.pdf' %}" class="download-button">Download MSc Dissertation</a>
+          </div>
+          <div class="right-column-academics">
+            <ul class="module-list">
+              <li><u><h3> MSc Advanced Mathematics</h3></u></li>
+              <li>Postgraduate Dissertation - 86% </li>
+              <li>Mathematical Biology and Ecology – 74%</li>
+              <li>Non-linear Systems and Control – 62%</li>
+              <li>Fluid Dynamics of Atmospheres and Oceans – 83%</li>
+              <li>Modelling the Weather and Climate – 72%</li>
+              <li>Waves, Instabilities and Turbulence – 73%</li>
+              <li>Research in Mathematical Sciences – 74%</li>
+              <li>Midlatitude Weather Systems – 70%</li>
+              <li>Mathematical Modelling in Biology and Medicine – 78%</li>
+
+              <!-- Add more modules and grades -->
+            </ul>
+          </div>
+        </div>
+        <div class="degree">
+          <div class="left-column-academics">
+            <iframe src="{% static 'pdfs/bsc-report.pdf' %}" class="pdf-iframe-academics"></iframe>
+            <a href="{% static 'pdfs/bsc-report.pdf' %}" class="download-button">Download BSc Project</a>
+          </div>
+          <div class="right-column-academics">
+            <ul class="module-list">
+              <li><u><h3> BSc Mathematics and Physics</h3></u></li>
+              <li>Theory of Weather and Climate - 76%</li>
+              <li>Mathematics of Climate Change – 86%</li>
+              <li>Partial Differential Equations – 67%</li>
+              <li>Nuclear and High Energy Particle Physics – 84%</li>
+              <li>Fluid Dynamics – 60%</li>
+              <li>Electromagnetism and Quantum Mechanics – 78%</li>
+              <li>The Biophysics of Cells and Tissues – 74%</li>
+              <li>One- Semester Physics Project and Report – 70%</li>
+              <li>Differential Equations – 88%</li>
+              <li>TVector Calculus and Applications – 89%</li>
+              <li>Electromagnetism I – 75%</li>
+              <li>Thermal Physics – 73%</li>
+              <li>The Physics of Living Systems – 73%</li>
+              <li>Quantum Mechanics I – 79%</li>
+              <li>Analysis – 75% </li>
+              <!-- Add more modules and grades -->
+            </ul>
+          </div>
+        </div>
+        <div class="alevels-gcses">
+          <div class="left-column-academics" >
+            <h2>A-levels</h2>
+            <ul class="module-list">
+              <li>Chemistry: A*</li>
+              <li>Physics: A</li>
+              <li>Mathematics: A</li>
+              <li>Further Mathematics (AS): A</li>
+              <!-- Add more subjects and grades -->
+            </ul>
+          </div>
+          <div class="right-column-academics">
+            <h2>GCSEs</h2>
+            <ul class="module-list">
+              <li>Mathematics: A*</li>
+              <li>Aditional Mathematics - Distinction</li>
+              <li>Physics: A*</li>
+              <li>Chemistry: A*</li>
+              <li>Biology: A*</li>
+              <li>French: A*</li>
+              <li>Spanish: A*</li>
+              <li>Physical Education: A*</li>
+              <li>History: A*</li>
+              <li>Religious Studies: A*</li>
+              <li>English Language: A</li>
+              <li>English Literature: A</li>
+              <!-- Add more subjects and grades -->
+            </ul>
+          </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% load static %}
+
+
+<nav class="navbar">
+  <div class="navbar-left">
+    <a href="{% url 'home' %}">
+      <img src="{% static 'images/olly1.jpg' %}" alt="Olly's Profile" class="nav-image">
+    </a>
+    <a href="{% url 'home' %}">
+      <span class="navbar-name">Olly White</span>
+    </a>
+  </div>
+  <div class="navbar-center">
+    <ul>
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="{% url 'about' %}">About</a></li>
+      <li><a href="{% url 'resume' %}">Resume</a></li>
+      <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+      <li><a href="{% url 'academics' %}">Academics</a></li>
+      <li><a href="{% url 'rugby' %}">Rugby</a></li>
+      <li><a href="{% url 'contact' %}">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+
+

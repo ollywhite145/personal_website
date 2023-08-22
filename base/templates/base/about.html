@@ -1,0 +1,30 @@
+{% extends 'base/main.html' %}
+
+{% load static %}
+{% block content %}
+
+
+
+
+<div class="content about-content">
+  <div class="about-section">
+    <div class="left-column">
+      <img src="{% static 'images/olly13.jpeg' %}" alt="Olly's Profile" class="about-picture">
+    </div>
+    	<div class="right-column">
+      	<div class="contact-details">
+      	<h2 class="about-title"><u>OLLY WHITE</u></h2>
+        <p><strong>DOB:</strong> 14th May 2000</p>
+        <p><strong>Email:</strong> oli-white@hotmail.co.uk</p>
+        <p><strong>Phone:</strong> +44 7933 495776</p>
+        <p><strong>School:</strong> Llandovery College</p>
+        <p><strong>University:</strong> Exeter University MSc, Bsc</p>
+      </div>
+      <p class="contact-details">
+        Write a short paragraph about yourself here. This is where you can share your interests, experiences, and anything else you'd like to highlight.
+      </p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
